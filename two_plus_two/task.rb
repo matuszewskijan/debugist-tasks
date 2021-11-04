@@ -1,1 +1,3 @@
-puts 2 + 2
+def calc(one, two)
+  one + two
+end
