@@ -22,7 +22,7 @@ class EmailListParser
   def generate_csv(employees)
     CSV.open("results.csv", "w") do |csv|
       csv << ["first_name", "last_name", "email"]
-      csv << employees.each { |line| csv << line }
+      employees.each { |line| csv << line }
     end
   end
 end
